@@ -2,6 +2,10 @@
 
 class usuaris extends CI_Controller {
 
+	public function listusers()
+	{
+		$this->load->view('list');
+	}
 
 	public function crear()
 	{
@@ -19,6 +23,5 @@ class usuaris extends CI_Controller {
 		$this->load->view('eliminar'); 
 }
 }
-
 /* End of file welcome.php */
 /* Location: ./application/controllers/welcome.php */

@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>HTML Online Editor Sample</title>
+		<title>Benvingut a la meva pàgina</title>
 	</head>
 	<body>
 		<h1>
@@ -12,6 +12,8 @@
 		<p>
 			Usuaris</p>
 		<ul>
+			<li> <a href="/codeigniterhelloworld/index.php/usuaris/listusers">Llistar</a>
+			
 			<li>
 				<a href="/codeigniterhelloworld/index.php/usuaris/crear">Crear</a></li>
 			<li>

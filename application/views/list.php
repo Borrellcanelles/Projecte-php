@@ -1,0 +1,47 @@
+<html>
+<head>Taula d'usuaris
+</head>
+<body><p>Aquesta es la taula d'usuaris</p>
+<table border="1" bordercolor="#000000" width="100%" cellpadding="3" cellspacing="3">
+	<thead>
+		<tr>
+			<th><b>Nom</b></th>
+			<th><b>DNI</b></th>
+			<th><b>Direccio</b></th>
+			<th><b>Edad</b></th>
+			<th><b>Sexe</b></th>
+		</thead>
+		</tr>
+		<tbody>
+		<tr>
+			<td>Manolita</td>
+			<td>41423658D</td>
+			<td>Av/error</td>
+			<td>22</td>
+			<td>M</td>
+		</tr>
+		<tr>
+			<td>Dirtino</td>
+			<td>13458251Q</td>
+			<td>C.404</td>
+			<td>25</td>
+			<td>H</td>
+		</tr>
+		<tr>
+			<td>Emma</td>
+			<td>46582137A</td>
+			<td>C.English</td>
+			<td>20</td>
+			<td>M</td>
+		</tr>
+		<tr>
+			<td>Fructuoso</td>
+			<td>44552211F</td>
+			<td>C.Taberna</td>
+			<td>66</td>
+			<td>H</td>
+		</tr>
+		</tbody>
+</table>
+</body>
+</html>
