@@ -1,8 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-<head>Taula d'usuaris
-</head>
-<body><p>Aquesta es la taula d'usuaris</p>
-<table border="1" bordercolor="#000000" width="100%" cellpadding="3" cellspacing="3">
+	<head>Taula d'usuaris
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<tittle> Llista d'usuaris </tittle>
+
+	<style type="text/css" title="currentStyle">
+		@import "demo_page.css"; @import "header.ccss";
+		@import "demo_table.css";
+	</style>
+
+	<script type="text/javascript" language="javascript" src="/javascript/jquery/jquery.js"></script>
+
+	<script type="text/javascript" language="javascript" src="/javascript/jquery/datatables/jquery.dataTables.js"></script>
+
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+				$('#25').dataTable();
+			} );
+		</script>
+	</head>
+
+<body>
+	<p>Aquesta es la taula d'usuaris</p>
+	<table id="25" border="1" bordercolor="#000000" width="100%" cellpadding="3" cellspacing="3">
 	<thead>
 		<tr>
 			<th><b>Nom</b></th>
@@ -10,8 +30,8 @@
 			<th><b>Direccio</b></th>
 			<th><b>Edad</b></th>
 			<th><b>Sexe</b></th>
-		</thead>
 		</tr>
+		</thead>
 		<tbody>
 		<tr>
 			<td>Manolita</td>
