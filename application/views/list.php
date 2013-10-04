@@ -1,54 +1,27 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
 	<head>
-	
-	<!-- jQuery -->
-	<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
-	<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-
-		<tittle> Llista d'usuaris </tittle>
-
-
- 
-	<!-- <style type="text/css" title="currentStyle"> 
-		@import "/demo_page.css"; @import "/header.ccss";
-		@import "/demo_table.css";
-	</style> -->
-
-	<!-- <script type="text/javascript" language="javascript" src="/javascript/jquery/jquery.js"></script>
-
-	<script type="text/javascript" language="javascript" src="/javascript/jquery/datatables/jquery.dataTables.js"></script> -->
-
-		 <script type="text/javascript" charset="utf-8">
-			$(document).ready(function() {
-				$('#25').dataTable();
-			} );
-		</script>
+		<title>LLista</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Bootstrap -->
+		<link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
 	</head>
-
-<p>
-</p>
-<body>
-    <div class="navbar">
-    <div class="navbar-inner">
-    <a class="brand" href="#">Title</a>
-    <ul class="nav">
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="#">Link</a></li>
-    <li><a href="#">Link</a></li>
-    </ul>
-    </div>
-    </div>
-	<p>Aquesta es la taula d'usuaris</p>
-	<table id="25" border="1" bordercolor="#000000" width="100%" cellpadding="3" cellspacing="3">
-	<thead>
+	<body>
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<div class="navbar">
+			<div class="navbar-inner">
+				<a class="brand" href="#">Llista Usuaris</a>
+				<ul class="nav">
+					<li class="active"><a href="/codeigniterhelloworld/index.php/principal/principal1">P&agrave;gina principal</a></li>
+					<li><a href="/codeigniterhelloworld/index.php/usuaris/modificar">Modifica el teu usuari</a></li>
+					<li><a href="/codeigniterhelloworld/index.php/configuracio/canviarpassword">Canvia la teva password</a></li>
+					<li><a href="/codeigniterhelloworld/index.php/configuracio/sortir">Sortir</a></li>
+				</ul>
+			</div>
+		</div>
+		<p>Aquesta es la taula d'usuaris</p>
+		<table class="table-striped" id="25" border="1" bordercolor="#000000" width="100%" cellpadding="3" cellspacing="3">
+		<thead>
 		<tr>
 			<th><b>ID</b></th>
 			<th><b>Nom</b></th>
@@ -60,24 +33,25 @@
 		</tr>
 		</thead>
 		<tbody>
-		<tr>
+		<tr class="success">
 			<td>1</td>
 			<td>Manolita</td>
 			<td>41423658D</td>
 			<td>Av/error</td>
 			<td>22</td>
 			<td>M</td>
-			<td><a href="modificarusuari/1"><input type="button" name="boton" value="Modificar"/></a><a href="eliminarusuari/1"><input type="button" name="boton" value="Eliminar"/></a>
-			
+			<td><a href="modificarusuari/1"><button class="btn btn-primary" type="button">Modificar</button></a>
+			<a href="eliminarusuari/1"><button class="btn btn-danger" type="button">Eliminar</button></a></td>
 		</tr>
-		<tr>
+		<tr class="warning">
 			<td>2</td>
 			<td>Dirtino</td>
 			<td>13458251Q</td>
 			<td>C.404</td>
 			<td>25</td>
 			<td>H</td>
-			<td><a href="modificarusuari/2"><input type="button" name="boton" value="Modificar"/></a><a href="eliminarusuari/2"><input type="button" name="boton" value="Eliminar"/></a>
+			<td><a href="modificarusuari/2"><button class="btn btn-primary" type="button">Modificar</button></a>
+			<a href="eliminarusuari/2"><button class="btn btn-danger" type="button">Eliminar</button></a>
 		</tr>
 		<tr>
 			<td>3</td>
@@ -86,7 +60,8 @@
 			<td>C.English</td>
 			<td>20</td>
 			<td>M</td>
-			<td><a href="modificarusuari/3"><input type="button" name="boton" value="Modificar"/></a><a href="eliminarusuari/3"><input type="button" name="boton" value="Eliminar"/></a>
+			<td><a href="modificarusuari/3"><button class="btn btn-primary" type="button">Modificar</button></a>
+			<a href="eliminarusuari/3"><button class="btn btn-danger" type="button">Eliminar</button></a>
 		</tr>
 		<tr>
 			<td>4</td>
@@ -95,9 +70,12 @@
 			<td>C.Taberna</td>
 			<td>66</td>
 			<td>H</td>
-			<td><a href="modificarusuari/4"><input type="button" name="boton" value="Modificar"/></a><a href="eliminarusuari/4"><input type="button" name="boton" value="Eliminar"/></a>
+			<td><a href="modificarusuari/4"><button class="btn btn-primary" type="button">Modificar</button></a>
+			<a href="eliminarusuari/4"><button class="btn btn-danger" type="button">Eliminar</button></a>
 		</tr>
 		</tbody>
 </table>
+ <script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
