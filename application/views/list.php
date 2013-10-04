@@ -1,14 +1,18 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 	<head>
-	<!-- DataTables CSS -->
-	<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+	
 	<!-- jQuery -->
 	<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
- 
-	<!-- DataTables -->
-	<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
 		<tittle> Llista d'usuaris </tittle>
 
 
@@ -32,6 +36,16 @@
 <p>
 </p>
 <body>
+    <div class="navbar">
+    <div class="navbar-inner">
+    <a class="brand" href="#">Title</a>
+    <ul class="nav">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Link</a></li>
+    <li><a href="#">Link</a></li>
+    </ul>
+    </div>
+    </div>
 	<p>Aquesta es la taula d'usuaris</p>
 	<table id="25" border="1" bordercolor="#000000" width="100%" cellpadding="3" cellspacing="3">
 	<thead>
