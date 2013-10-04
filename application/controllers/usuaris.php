@@ -22,6 +22,16 @@ class usuaris extends CI_Controller {
 		
 		$this->load->view('eliminar'); 
 }
+	public function modificarusuari()
+	{
+		
+		$this->load->view('modificarusuari'); 
+}
+	public function eliminarusuari()
+	{
+		
+		$this->load->view('eliminarusuari'); 
+}
 }
 /* End of file welcome.php */
 /* Location: ./application/controllers/welcome.php */
