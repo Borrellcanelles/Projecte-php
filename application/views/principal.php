@@ -1,24 +1,24 @@
-    <!DOCTYPE html>
-    <html>
-    <head>
-		<title>Pàgina Borrell</title>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>P&agrave;gina principal</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Bootstrap -->
 		<link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
-		
-    </head>
+				<script src="http://code.jquery.com/jquery.js"></script>
+		<div class="navbar">
+			<div class="navbar-inner">
+				<a class="brand" href="#">Llista Usuaris</a>
+				<ul class="nav">
+					<li class="active"><a href="/codeigniterhelloworld/index.php/principal/principal1">P&agrave;gina principal</a></li>
+					<li><a href="/codeigniterhelloworld/index.php/usuaris/modificar">Modifica el teu usuari</a></li>
+					<li><a href="/codeigniterhelloworld/index.php/configuracio/canviarpassword">Canvia la teva password</a></li>
+					<li><a href="/codeigniterhelloworld/index.php/configuracio/sortir">Sortir</a></li>
+				</ul>
+			</div>
+		</div>
+	</head>
     <body>
-        <div class="navbar">
-    <div class="navbar-inner">
-    <a class="brand" href="#">Title</a>
-    <ul class="nav">
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="#">Link</a></li>
-    <li><a href="#">Link</a></li>
-    </ul>
-    </div>
-    </div>		
-
 		<p>
 			INDEX :</p>
 		<p>

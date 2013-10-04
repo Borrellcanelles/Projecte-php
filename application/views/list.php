@@ -5,9 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Bootstrap -->
 		<link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
-	</head>
-	<body>
-		<script src="http://code.jquery.com/jquery.js"></script>
+				<script src="http://code.jquery.com/jquery.js"></script>
 		<div class="navbar">
 			<div class="navbar-inner">
 				<a class="brand" href="#">Llista Usuaris</a>
@@ -19,6 +17,8 @@
 				</ul>
 			</div>
 		</div>
+	</head>
+	<body>
 		<p>Aquesta es la taula d'usuaris</p>
 		<table class="table-striped" id="25" border="1" bordercolor="#000000" width="100%" cellpadding="3" cellspacing="3">
 		<thead>
