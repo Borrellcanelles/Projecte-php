@@ -41,7 +41,7 @@ class principal extends CI_Controller {
 			$id = 200;
 			$idnou = 201;
 			$this->db->where('actor_id', $id);	
-			$this->db->update('actor',$data); 
+			$this->db->update('actor',$data); }
 			
 			
 		//DELETE FROM `users`.`actor` WHERE `actor`.`actor_id` = 9141
@@ -58,5 +58,4 @@ class principal extends CI_Controller {
     * 
     * return $this->db->affected_rows() > 0;
 */
-}
 }
