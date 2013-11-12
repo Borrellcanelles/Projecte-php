@@ -11,57 +11,29 @@
 		<tr>
 			<th><b>ID</b></th>
 			<th><b>Nom</b></th>
-			<th><b>DNI</b></th>
+			<!--<th><b>DNI</b></th>
 			<th><b>Direccio</b></th>
 			<th><b>Edad</b></th>
-			<th><b>Sexe</b></th>
+			<th><b>Sexe</b></th>-->
 			<th><b>Accions</b></th>
 		</tr>
 		</thead>
 		<tbody>
-		<tr class="success">
-			<td>1</td>
-			<td>Manolita</td>
-			<td>41423658D</td>
-			<td>Av/error</td>
-			<td>22</td>
-			<td>M</td>
-			<td><a href="modificarusuari/1"><button class="btn btn-primary" type="button">Modificar</button></a>
-			<a href="eliminarusuari/1"><button class="btn btn-danger" type="button">Eliminar</button></a></td>
-		</tr>
-		<tr class="warning">
-			<td>2</td>
-			<td>Dirtino</td>
-			<td>13458251Q</td>
-			<td>C.404</td>
-			<td>25</td>
-			<td>H</td>
-			<td><a href="modificarusuari/2"><button class="btn btn-primary" type="button">Modificar</button></a>
-			<a href="eliminarusuari/2"><button class="btn btn-danger" type="button">Eliminar</button></a>
-		</tr>
-		<tr>
-			<td>3</td>
-			<td>Emma</td>
-			<td>46582137A</td>
-			<td>C.English</td>
-			<td>20</td>
-			<td>M</td>
-			<td><a href="modificarusuari/3"><button class="btn btn-primary" type="button">Modificar</button></a>
-			<a href="eliminarusuari/3"><button class="btn btn-danger" type="button">Eliminar</button></a>
-		</tr>
-		<tr>
-			<td>4</td>
-			<td>Fructuoso</td>
-			<td>44552211F</td>
-			<td>C.Taberna</td>
-			<td>66</td>
-			<td>H</td>
-			<td><a href="modificarusuari/4"><button class="btn btn-primary" type="button">Modificar</button></a>
-			<a href="eliminarusuari/4"><button class="btn btn-danger" type="button">Eliminar</button></a>
-		</tr>
+			<?php 
+			foreach($query->result() as $index){ 
+				echo "<tr>";
+				echo "<td>" .$index ->actor_id. "</td>";
+				echo "<td>" .$index-> fullname. "</td>";
+				echo "<td>".' <a href="modificarusuari/1"><button class="btn btn-primary" type="button">Modificar</button></a>'.
+			'<a href="eliminarusuari/1"><button class="btn btn-danger" type="button">Eliminar</button></a>'."</td>";
+			echo "</tr>";}
+			
+			?>	
 		</tbody>
 </table>
+
  <script src="http://code.jquery.com/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
+<?php  ?>

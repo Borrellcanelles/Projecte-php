@@ -4,18 +4,15 @@ class usuaris extends CI_Controller {
 	function __construct()
     {
         parent::__construct();
-        $this->load->model('Hello_model');
+        $this->load->model('users');
     }
-   public function say_Hello()
-    {
-        $data['hello'] = $this->Hello_model->say_hello();
-
-        $this->load->view('hola',$data);
-    }
-
+// fer un vector i recorrel en lo for each, ha de portar 
+// l'objecte persona 
 	public function listusers()
-	{
-		$this->load->view('list');
+	{	
+			
+		$users ['query'] = $this->users->getUser();
+		$this->load->view('list', $users);
 	}
 
 	public function crear()
