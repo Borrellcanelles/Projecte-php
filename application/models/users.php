@@ -17,6 +17,14 @@ class Users extends CI_Model{
 		
 		return $query;
 	}
+	
+	
+	function insertUser($actor_id, $fullname){
+        $data = array(
+        'actor_id' => $actor_id,
+        'fullname'=> $fullname);
+        return $this->db->insert('actor', $data);
+	}
 }
 
 ?>

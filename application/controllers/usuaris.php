@@ -18,7 +18,7 @@ class usuaris extends CI_Controller {
 	public function crear()
 	{
 		
-		$this->load->view('crear'); 
+		$this->load->view('crearusuaris'); 
 }
 	public function modificar()
 	{

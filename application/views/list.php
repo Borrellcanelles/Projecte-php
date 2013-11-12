@@ -6,6 +6,7 @@
 	</head>
 	<body>
 		<p>Aquesta es la taula d'usuaris</p>
+		<a href="crear"><button class="btn btn-success" type="button">Crear usuari</button></a>
 		<table class="table-striped" id="25" border="1" bordercolor="#000000" width="100%" cellpadding="3" cellspacing="3">
 		<thead>
 		<tr>
