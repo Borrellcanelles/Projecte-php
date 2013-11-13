@@ -19,6 +19,11 @@ class usuaris extends CI_Controller {
 	{
 		
 		$this->load->view('crearusuaris'); 
+		$actor_id = $this->input->post('actor_id');
+                $fullname = $this->input->post('fullname');
+                
+                $this->users->insertUser($actor_id, $fullname);
+                return "Usuari Insertat";
 }
 	public function modificar()
 	{
