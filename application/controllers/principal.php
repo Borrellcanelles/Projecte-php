@@ -12,12 +12,12 @@ class principal extends CI_Controller {
 	public function principal1()
 	{
 		$this->load->view('principal'); 
-		$query = $this->db->query('SELECT * FROM actor LIMIT 10');
+		/*$query = $this->db->query('SELECT * FROM actor LIMIT 10');
 		if ($query->num_rows() > 0) {
 			foreach ($query->result_array() as $row) {
 				echo $row['actor_id']. $row['fullname']. "<br>";
 			}
-		}	
+		}	*/
 	}
 	
 	public function provainsert(){

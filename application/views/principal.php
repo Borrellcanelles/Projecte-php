@@ -6,9 +6,9 @@
 	</head>
     <body>
 		<p>
-			INDEX :</p>
+			<h1>INDEX :</h1> </p>
 		<p>
-			Usuaris</p>
+			<h2>Usuaris</h2></p>
 		<ul>
 			<li> <a href="/codeigniterhelloworld/index.php/usuaris/listusers">Llistar</a>
 			
@@ -21,7 +21,7 @@
 		</ul>
 		<p>
 			<br />
-			Configuracio</p>
+			<h2>Configuracio</h2></p>
 		<ul>
 			<li>
 				<a href="/codeigniterhelloworld/index.php/configuracio/canviarpassword">Canviar paraula de pas</a></li>

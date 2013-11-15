@@ -38,7 +38,7 @@
 </br>
 </br>
 <h1>Crea el teu Usuari</h1>
-<form action="../index.php/users/create" method="post">
+<form method="post">
           <table border = "0">
                         
             <tr>
