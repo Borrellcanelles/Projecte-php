@@ -8,6 +8,7 @@
 				<ul class="nav">
 					<li class="active"><a href="/codeigniterhelloworld/index.php/principal/principal1">P&agrave;gina principal</a></li>
 					<li><a href="/codeigniterhelloworld/index.php/usuaris/modificar">Modifica el teu usuari</a></li>
+					<li><a href="/codeigniterhelloworld/index.php/usuaris/listusers">Llista d'usuaris</a></li>
 					<li><a href="/codeigniterhelloworld/index.php/configuracio/canviarpassword">Canvia la teva password</a></li>
 					<li><a href="/codeigniterhelloworld/index.php/configuracio/sortir">Sortir</a></li>
 				</ul>
