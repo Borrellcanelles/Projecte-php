@@ -1,21 +1,17 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>LLista</title>
-		<?php include("capçalera.php"); ?>
 <script>
 $(function(){
         
         $("[rel='tooltip']").tooltipster();        
         
-        $('#25').dataTable( {
+        $('#lessons').dataTable( {
                 "sDom": 'T<"clear">lfrtip',
+                "aLengthMenu": [[10, 25, 50,100,200,500,1000,-1], [10, 25, 50,100,200,500,1000, "<?php echo lang("All");?>"]],
                 "oTableTools": {
-					"sSwfPath": "/assets/media/swf/copy_csv_xls_pdf.swf",
+            "sSwfPath": "<?php echo base_url('assets/media/swf/copy_csv_xls_pdf.swf');?>",
                         "aButtons": [
                                 {
                                         "sExtends": "copy",
-                                        "sButtonText": "<?php echo "hola";?>"
+                                        "sButtonText": "<?php echo lang("Copy");?>"
                                 },
                                 {
                                         "sExtends": "csv",
@@ -28,13 +24,13 @@ $(function(){
                                 {
                                         "sExtends": "pdf",
                                         "sPdfOrientation": "landscape",
-                                        "sPdfMessage": "<?php echo "lessons";?>",
+                                        "sPdfMessage": "<?php echo lang("lessons");?>",
                                         "sTitle": "TODO",
                                         "sButtonText": "PDF"
                                 },
                                 {
                                         "sExtends": "print",
-                                        "sButtonText": "<?php echo "Print";?>"
+                                        "sButtonText": "<?php echo lang("Print");?>"
                                 },
                         ]
 
@@ -73,52 +69,4 @@ $(function(){
         });
 });
 </script>
-
-			<!-- DataTables CSS -->
-<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
-<!-- jQuery -->
-<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
- 
-<!-- DataTables -->
-<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
-<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-
-	 <script type="text/javascript" charset="utf-8">
-		$(document).ready(function() {
-			$('#25').dataTable();
-		} );
-	</script>
-	
-
-	</head>
-	<body>
-		<p>Aquesta es la taula d'usuaris</p>
-		<a href="crear"><button class="btn btn-success" type="button">Crear usuari</button></a>
-		<table class="table-striped" id="25" border="1" bordercolor="#000000" width="100%" cellpadding="3" cellspacing="3">
-		<thead>
-		<tr>
-			<th><b>ID</b></th>
-			<th><b>Nom</b></th>
-			<!--<th><b>DNI</b></th>
-			<th><b>Direccio</b></th>
-			<th><b>Edad</b></th>
-			<th><b>Sexe</b></th>-->
-			<th><b>Accions</b></th>
-		</tr>
-		</thead>
-		<tbody>
-			<?php 
-			foreach($query->result() as $index){ 
-				echo "<tr>";
-				echo "<td>" .$index ->actor_id. "</td>";
-				echo "<td>" .$index-> fullname. "</td>";
-				echo "<td>".' <a href="modificarusuari/1"><button class="btn btn-primary" type="button">Modificar</button></a>'.
-			'<a href="eliminarusuari/1"><button class="btn btn-danger" type="button">Eliminar</button></a>'."</td>";
-			echo "</tr>";}
-			
-			?>	
-		</tbody>
-</table>
-</body>
-</html>
-<?php  ?>
+"sSwfPath": "/assets/media/swf/copy_csv_xls_pdf.swf"
