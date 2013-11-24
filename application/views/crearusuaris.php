@@ -5,7 +5,7 @@
 	</head>
 	<body>
 <h1>Crea el teu Usuari</h1>
-<form method="post onSubmit="window.open('principal/principal1')"">
+<form method="post">
           <table border = "0">
             <tr>
              <td>Nom:</td>
@@ -19,3 +19,4 @@
         </form>
 </body>
 </html>
+

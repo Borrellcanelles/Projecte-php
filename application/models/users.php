@@ -19,11 +19,12 @@ class Users extends CI_Model{
 	}
 	
 	
-	function insertUser($actor_id, $fullname){
+	function insertUser($fullname){
         $data = array(
-        'fullname'=> $fullname);
+        'fullname'=> $_POST['fullname']);
         return $this->db->insert('actor', $data);
 	}
+	
 	
 	function deleteUser($actor_id)
     {
