@@ -1,9 +1,8 @@
 <html>
-<!DOCTYPE html>
-<html>
 	<head>
-		<title>Eliminar Usuari</title>
+		<meta http-equiv="Refresh" content="3;url=/codeigniterhelloworld/index.php/usuaris/listusers">
+		<title>Usuari Eliminat</title>
 <?php include("capçalera.php"); ?>
 	</head>
-<p>Aqui pots eliminar el teu usuari</p>
+<p><h1>Has eliminat un usuari, tornant a la llista en 3 segons...</h1></p>
 </html>

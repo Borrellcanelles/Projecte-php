@@ -107,16 +107,16 @@ $(function(){
 		</tr>
 		</thead>
 		<tbody>
-			<?php 
-			foreach($query->result() as $index){ 
-				echo "<tr>";
-				echo "<td>" .$index ->actor_id. "</td>";
-				echo "<td>" .$index-> fullname. "</td>";
-				echo "<td>".' <a href="modificarusuari/1"><button class="btn btn-primary" type="button">Modificar</button></a>'.
-			'<a href="eliminarusuari/1"><button class="btn btn-danger" type="button">Eliminar</button></a>'."</td>";
-			echo "</tr>";}
+ <?php foreach($query->result() as $index) {?> 
+			<tr>
+			<td> <?php echo $index -> actor_id; ?></td>
+			<td> <?php echo $index -> fullname; ?></td>
 			
-			?>	
+			<td>
+				<a href='modificar/<?php echo $index->actor_id;?>'><button class="btn btn-primary" type="button">Modificar</button></a>
+				<a href='eliminar/<?php echo $index->actor_id; ?>'><button class="btn btn-danger" type="button">Eliminar</button></a></td>
+			<?php echo "</tr>"; } ?> 
+			
 		</tbody>
 </table>
 </body>

@@ -24,6 +24,12 @@ class Users extends CI_Model{
         'fullname'=> $fullname);
         return $this->db->insert('actor', $data);
 	}
+	
+	function deleteUser($actor_id)
+    {
+       $this->db->delete('actor', array('actor_id' => $actor_id));
+     
+    }
 }
 
 ?>

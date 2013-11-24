@@ -32,20 +32,10 @@ class usuaris extends CI_Controller {
 		
 		$this->load->view('modificar'); 
 }
-	public function eliminar()
+	public function eliminar($actor_id)
 	{
-		
-		$this->load->view('eliminar'); 
-}
-	public function modificarusuari()
-	{
-		
-		$this->load->view('modificarusuari'); 
-}
-	public function eliminarusuari()
-	{
-		
-		$this->load->view('eliminarusuari'); 
+                $this->users->deleteUser($actor_id);
+                $this->load->view('eliminar'); 
 }
 
 	public function grocery()
