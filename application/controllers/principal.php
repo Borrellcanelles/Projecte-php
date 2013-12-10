@@ -43,19 +43,4 @@ class principal extends CI_Controller {
 			$this->db->where('actor_id', $id);	
 			$this->db->update('actor',$data); }
 			
-			
-		//DELETE FROM `users`.`actor` WHERE `actor`.`actor_id` = 9141
-		
-
-	/*
-	public function provainsert() {
-	    class Myclass {
-        var $actor_id = 900;
-        var $fullname = 'pepitolospalotes';
-    }
-    $objeto = new Myclass;
-    $this->db->insert('actors', $objeto);
-    * 
-    * return $this->db->affected_rows() > 0;
-*/
 }
