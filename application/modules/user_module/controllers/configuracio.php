@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class configuracio extends CI_Controller {
+class configuracio extends MX_Controller {
 
 
 	public function canviarpassword()

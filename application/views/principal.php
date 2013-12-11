@@ -10,23 +10,19 @@
 		<p>
 			<h2>Usuaris</h2></p>
 		<ul>
-			<li> <a href="/codeigniterhelloworld/index.php/usuaris/listusers">Llistar</a>
+			<li> <a href="/codeigniterhelloworld/index.php/user_module/usuaris/listusers">Llistar</a>
 			
 			<li>
-				<a href="/codeigniterhelloworld/index.php/usuaris/crear">Crear</a></li>
-			<li>
-				<a href="/codeigniterhelloworld/index.php/usuaris/modificar">Modificar</a></li>
-			<li>
-				<a href="/codeigniterhelloworld/index.php/usuaris/eliminar">Eliminar</a></li>
+				<a href="/codeigniterhelloworld/index.php/user_module/usuaris/crear">Crear</a></li>
 		</ul>
 		<p>
 			<br />
 			<h2>Configuracio</h2></p>
 		<ul>
 			<li>
-				<a href="/codeigniterhelloworld/index.php/configuracio/canviarpassword">Canviar paraula de pas</a></li>
+				<a href="/codeigniterhelloworld/index.php/user_module/configuracio/canviarpassword">Canviar paraula de pas</a></li>
 			<li>
-				<a href="/codeigniterhelloworld/index.php/configuracio/sortir">Sortir</a></li>
+				<a href="/codeigniterhelloworld/index.php/user_module/configuracio/sortir">Sortir</a></li>
 		</ul>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>

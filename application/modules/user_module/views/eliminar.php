@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<meta http-equiv="Refresh" content="3;url=/codeigniterhelloworld/index.php/usuaris/listusers">
+		<meta http-equiv="Refresh" content="3;url=/codeigniterhelloworld/user_module/index.php/usuaris/listusers">
 		<title>Usuari Eliminat</title>
 <?php include("capçalera.php"); ?>
 	</head>

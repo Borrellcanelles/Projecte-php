@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class sortir extends CI_Controller {
+class sortir extends MX_Controller {
 
 
 	public function sortir1()
