@@ -50,7 +50,7 @@ $(document).ready(function(){
   $("button").click(function(){
     $.getJSON("http://127.0.0.1/codeigniterhelloworld/index.php/user_module/product/index/8",function(result){
       $(result, function(i, field){
-        $("username").html("nom");
+        $("#username").html(result.username);
       });
     });
   });

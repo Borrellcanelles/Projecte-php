@@ -5,6 +5,7 @@ class usuaris extends MX_Controller {
     {
         parent::__construct();
         $this->load->model('users');
+        $this->load->helper('url');
     }
 // fer un vector i recorrel en lo for each, ha de portar 
 // l'objecte persona 

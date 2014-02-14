@@ -74,13 +74,30 @@ $(function(){
 });
 </script>
 
+<script>
+$(document).ready( function () {
+	$('#25').dataTable( {
+		"sDom": 'C<"clear">lfrtip'
+	} );
+} );
+</script>
+
 			<!-- DataTables CSS -->
 <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
 <!-- jQuery -->
-<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
- 
+<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+
+<!--Table Tools-->
+<script type="text/javascript" charset="utf-8" src="../../../assets/media/js/ZeroClipboard.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../assets/media/js/TableTools.js"></script>
+
+
 <!-- DataTables -->
 <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+<style type="text/css" title="currentStyle">
+			@import "../../../assets/media/css/TableTools.css";
+		</style>
+
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 
 	 <script type="text/javascript" charset="utf-8">

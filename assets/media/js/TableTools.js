@@ -1,13 +1,13 @@
 /*
  * File:        TableTools.js
- * Version:     2.1.5
+ * Version:     2.1.4
  * Description: Tools and buttons for DataTables
  * Author:      Allan Jardine (www.sprymedia.co.uk)
  * Language:    Javascript
  * License:	    GPL v2 or BSD 3 point style
  * Project:	    DataTables
  * 
- * Copyright 2009-2013 Allan Jardine, all rights reserved.
+ * Copyright 2009-2012 Allan Jardine, all rights reserved.
  *
  * This source file is free software, under either the GPL v2 license or a
  * BSD style license, available at:
@@ -673,12 +673,11 @@ TableTools.prototype = {
 		/* Buttons */
 		this._fnButtonDefinations( this.s.buttonSet, this.dom.container );
 		
-		/* Destructor */
+		/* Destructor - need to wipe the DOM for IE's garbage collector */
 		this.s.dt.aoDestroyCallback.push( {
 			"sName": "TableTools",
 			"fn": function () {
-				$(that.s.dt.nTBody).off( 'click.DTTT_Select', 'tr' );
-				$(that.dom.container).empty();
+				that.dom.container.innerHTML = "";
 			}
 		} );
 	},
@@ -1025,7 +1024,7 @@ TableTools.prototype = {
 			
 			$(dt.nTable).addClass( this.classes.select.table );
 			
-			$(dt.nTBody).on( 'click.DTTT_Select', 'tr', function(e) {
+			$('tr', dt.nTBody).live( 'click', function(e) {
 				/* Sub-table must be ignored (odd that the selector won't do this with >) */
 				if ( this.parentNode != dt.nTBody )
 				{
@@ -1261,7 +1260,7 @@ TableTools.prototype = {
 			
 			if ( oConfig.fnClick !== null )
 			{
-				oConfig.fnClick.call( that, nButton, oConfig, null, e );
+				oConfig.fnClick.call( that, nButton, oConfig, null );
 			}
 			
 			/* Provide a complete function to match the behaviour of the flash elements */
@@ -2435,7 +2434,7 @@ TableTools.prototype.CLASS = "TableTools";
  *  @type	  String
  *  @default   See code
  */
-TableTools.VERSION = "2.1.5";
+TableTools.VERSION = "2.1.4";
 TableTools.prototype.VERSION = TableTools.VERSION;
 
 
