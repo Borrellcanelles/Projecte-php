@@ -3,77 +3,56 @@
 	<head>
 		<title>LLista</title>
 		<?php include("capçalera.php"); ?>
-<script>
-$(function(){
-        
-        $("[rel='tooltip']").tooltipster();        
-        
-        $('#25').dataTable( {
-                "sDom": 'T<"clear">lfrtip',
-                "oTableTools": {
-					"sSwfPath": "/assets/media/swf/copy_csv_xls_pdf.swf",
-                        "aButtons": [
-                                {
-                                        "sExtends": "copy",
-                                        "sButtonText": "<?php echo "hola";?>"
-                                },
-                                {
-                                        "sExtends": "csv",
-                                        "sButtonText": "CSV"
-                                },
-                                {
-                                        "sExtends": "xls",
-                                        "sButtonText": "XLS"
-                                },
-                                {
-                                        "sExtends": "pdf",
-                                        "sPdfOrientation": "landscape",
-                                        "sPdfMessage": "<?php echo "lessons";?>",
-                                        "sTitle": "TODO",
-                                        "sButtonText": "PDF"
-                                },
-                                {
-                                        "sExtends": "print",
-                                        "sButtonText": "<?php echo "Print";?>"
-                                },
-                        ]
-
-        },
-        "aoColumns": [
-                        null,
-                        { "sType": "numeric" },
-                        null,
-                        null,
-                        null,
-                    <?php if ($exists_assignatures_table){ echo "null,"; }?>
-                        null,
-                        null,
-                        null,
-                ],
-"iDisplayLength": 50,
-"aaSorting": [[ 1, "asc" ]],
-                "oLanguage": {
-                        "sProcessing": "Processant...",
-                        "sLengthMenu": "Mostra _MENU_ registres",
-                        "sZeroRecords": "No s'han trobat registres.",
-                        "sInfo": "Mostrant de _START_ a _END_ de _TOTAL_ registres",
-                        "sInfoEmpty": "Mostrant de 0 a 0 de 0 registres",
-                        "sInfoFiltered": "(filtrat de _MAX_ total registres)",
-                        "sInfoPostFix": "",
-                        "sSearch": "Filtrar:",
-                        "sUrl": "",
-                        "oPaginate": {
-                                "sFirst": "Primer",
-                                "sPrevious": "Anterior",
-                                "sNext": "Següent",
-                                "sLast": "Últim"
-                        }
-         }
-                
-        });
-});
+		
+<!-- table tools -->		
+<script type="text/javascript">
+	$(document).ready( function () {
+    $('#25').dataTable( {
+        "sDom": 'T<"clear">lfrtip',
+        "oTableTools": {
+            "sSwfPath": "<?php echo base_url('assets/media/swf/copy_csv_xls_pdf.swf');?>"
+        }
+    } );
+} );
+</script>
+<!-- fixed header -->
+<script type="text/javascript">
+$(document).ready( function () {
+	var oTable = $('#25').dataTable();
+	new FixedHeader( oTable );
+} );
 </script>
 
+
+<!--Script i funcio fixed columns-->
+<!-- <script type="text/javascript" charset="utf-8" src="<?php echo base_url('assets/media/js/FixedColumns.js');?>"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready( function () {
+				var oTable = $('#25').dataTable( {
+					"sScrollY": "300px",
+					"sScrollX": "100%",
+					"sScrollXInner": "150%",
+					"bScrollCollapse": true,
+					"bPaginate": false
+				} );
+				new FixedColumns( oTable );
+			} );
+		</script> -->
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#users_table').dataTable({    
+	"bPaginate": true,
+    "bLengthChange": true,
+    "bFilter": true,
+    "bSort": true,
+    "bInfo": true,
+    "bAutoWidth": true
+	});
+} );
+</script>
+
+
+<!-- algun script q sincerament no se lo q fa..
 <script>
 $(document).ready( function () {
 	$('#25').dataTable( {
@@ -81,21 +60,22 @@ $(document).ready( function () {
 	} );
 } );
 </script>
-
+-->
 			<!-- DataTables CSS -->
 <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
 <!-- jQuery -->
 <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
 
 <!--Table Tools-->
-<script type="text/javascript" charset="utf-8" src="../../../assets/media/js/ZeroClipboard.js"></script>
+<script type="text/javascript" charset="utf-8" src="<?php echo base_url('assets/media/js/ZeroClipboard.js')?>"></script>
 <script type="text/javascript" charset="utf-8" src="../../../assets/media/js/TableTools.js"></script>
 
 
 <!-- DataTables -->
 <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
 <style type="text/css" title="currentStyle">
-			@import "../../../assets/media/css/TableTools.css";
+			@import "<?php echo base_url('assets/media/css/TableTools.css');?>";
+			@import "<?php echo base_url('assets/media/css/TableTools_JUI.css');?>";
 		</style>
 
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>

@@ -7,6 +7,7 @@ class principal extends MX_Controller {
 
 		$this->load->database();
 		$this->load->helper('language');
+        $this->load->helper('url');		
 		$this->lang->load('español', 'español');
 	}
 
