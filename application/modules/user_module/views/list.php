@@ -8,18 +8,14 @@
 <script type="text/javascript">
 	$(document).ready( function () {
     $('#25').dataTable( {
-        "sDom": 'T<"clear">lfrtip',
+		 
+        "sDom":'T<"clear">lfrtip',
+        "sDom":'T<"Clear">Rlfrtip',
         "oTableTools": {
-            "sSwfPath": "<?php echo base_url('assets/media/swf/copy_csv_xls_pdf.swf');?>"
+            "sSwfPath": "<?php echo base_url('assets/media/swf/copy_csv_xls_pdf.swf');?>",
         }
+       
     } );
-} );
-</script>
-<!-- fixed header -->
-<script type="text/javascript">
-$(document).ready( function () {
-	var oTable = $('#25').dataTable();
-	new FixedHeader( oTable );
 } );
 </script>
 
@@ -61,22 +57,39 @@ $(document).ready( function () {
 } );
 </script>
 -->
-			<!-- DataTables CSS -->
+			<!-- DataTables-->
+			<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.js"></script>
 <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+
 <!-- jQuery -->
 <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
 
 <!--Table Tools-->
 <script type="text/javascript" charset="utf-8" src="<?php echo base_url('assets/media/js/ZeroClipboard.js')?>"></script>
 <script type="text/javascript" charset="utf-8" src="../../../assets/media/js/TableTools.js"></script>
-
-
-<!-- DataTables -->
-<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
 <style type="text/css" title="currentStyle">
 			@import "<?php echo base_url('assets/media/css/TableTools.css');?>";
 			@import "<?php echo base_url('assets/media/css/TableTools_JUI.css');?>";
 		</style>
+
+
+<!-- colreorder-->
+<script type="text/javascript" charset="utf-8" src="<?php echo base_url() ?>assets/media/js/ColReorder.js"></script>
+<script type="text/javascript" charset="utf-8" src="<?php echo base_url() ?>/assets/media/css/ColReorder.css"></script>
+
+<!-- fixed header -->
+<script type="text/javascript" charset="utf-8" src="<?php echo base_url() ?>assets/media/js/FixedHeader.js"></script>
+<script type="text/javascript" charset="utf-8" src="<?php echo base_url() ?>assets/media/js/FixedHeadermin.js"></script>
+
+
+<!-- colvis -->
+<script type="text/javascript" charset="utf-8" src="<?php echo base_url() ?>assets/media/js/ColVis.js"></script>
+<script type="text/javascript" charset="utf-8" src="<?php echo base_url() ?>assets/media/js/ColVismin.js"></script>
+<script type="text/javascript" charset="utf-8" src="<?php echo base_url() ?>/assets/media/css/ColVis.css"></script>
+<script type="text/javascript" charset="utf-8" src="<?php echo base_url() ?>/assets/media/css/ColVisAlt.css"></script>
+
+
+
 
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 
