@@ -9,10 +9,9 @@
 	$(document).ready( function () {
     $('#25').dataTable( {
 		 
-        "sDom":'T<"clear">lfrtip',
-        "sDom":'T<"Clear">Rlfrtip',
+        "sDom":'TC<"Clear">Rlfrtip',
         "oTableTools": {
-            "sSwfPath": "<?php echo base_url('assets/media/swf/copy_csv_xls_pdf.swf');?>",
+            "sSwfPath": "<?php echo base_url('assets/media/swf/copy_csv_xls_pdf.swf');?>"
         }
        
     } );
@@ -79,12 +78,12 @@ $(document).ready( function () {
 
 <!-- fixed header -->
 <script type="text/javascript" charset="utf-8" src="<?php echo base_url() ?>assets/media/js/FixedHeader.js"></script>
-<script type="text/javascript" charset="utf-8" src="<?php echo base_url() ?>assets/media/js/FixedHeadermin.js"></script>
+<script type="text/javascript" charset="utf-8" src="<?php echo base_url() ?>assets/media/js/FixedHeader.min.js"></script>
 
 
 <!-- colvis -->
 <script type="text/javascript" charset="utf-8" src="<?php echo base_url() ?>assets/media/js/ColVis.js"></script>
-<script type="text/javascript" charset="utf-8" src="<?php echo base_url() ?>assets/media/js/ColVismin.js"></script>
+<script type="text/javascript" charset="utf-8" src="<?php echo base_url() ?>assets/media/js/ColVis.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="<?php echo base_url() ?>/assets/media/css/ColVis.css"></script>
 <script type="text/javascript" charset="utf-8" src="<?php echo base_url() ?>/assets/media/css/ColVisAlt.css"></script>
 
