@@ -7,15 +7,19 @@
 <!-- table tools -->		
 <script type="text/javascript">
 	$(document).ready( function () {
-    $('#25').dataTable( {
-		 
-        "sDom":'TC<"Clear">Rlfrtip',
-        "oTableTools": {
+		var oTable = $('#25').dataTable( {
+					"sScrollY": "300px",
+					"sScrollX": "100%",
+					"sScrollXInner": "100%",
+					"bScrollCollapse": true,
+					"bPaginate": true,
+					"sDom":'TCRlfrtip',
+					"oTableTools": {
             "sSwfPath": "<?php echo base_url('assets/media/swf/copy_csv_xls_pdf.swf');?>"
         }
-       
-    } );
 } );
+new FixedColumns( oTable );
+});
 </script>
 
 
@@ -33,18 +37,6 @@
 				new FixedColumns( oTable );
 			} );
 		</script> -->
-<script type="text/javascript">
-$(document).ready(function() {
-	$('#users_table').dataTable({    
-	"bPaginate": true,
-    "bLengthChange": true,
-    "bFilter": true,
-    "bSort": true,
-    "bInfo": true,
-    "bAutoWidth": true
-	});
-} );
-</script>
 
 
 <!-- algun script q sincerament no se lo q fa..
@@ -87,6 +79,9 @@ $(document).ready( function () {
 <script type="text/javascript" charset="utf-8" src="<?php echo base_url() ?>/assets/media/css/ColVis.css"></script>
 <script type="text/javascript" charset="utf-8" src="<?php echo base_url() ?>/assets/media/css/ColVisAlt.css"></script>
 
+<!-- fixed columns-->
+<script type="text/javascript" charset="utf-8" src="<?php echo base_url() ?>assets/media/js/FixedColumns.js"></script>
+<script type="text/javascript" charset="utf-8" src="<?php echo base_url() ?>assets/media/js/FixedColumns.min.js"></script> 
 
 
 
@@ -108,19 +103,37 @@ $(document).ready( function () {
 		<tr>
 			<th><b>ID</b></th>
 			<th><b>Nom</b></th>
-			<!--<th><b>DNI</b></th>
+			<th><b>Accions</b></th>
+			<th><b>DNI</b></th>
 			<th><b>Direccio</b></th>
 			<th><b>Edad</b></th>
-			<th><b>Sexe</b></th>-->
-			<th><b>Accions</b></th>
+			<th><b>Sexe</b></th>
+			<th><b>DNI</b></th>
+			<th><b>Direccio</b></th>
+			<th><b>Edad</b></th>
+			<th><b>Sexe</b></th>
+			<th><b>DNI</b></th>
+			<th><b>Direccio</b></th>
+			<th><b>Edad</b></th>
+			<th><b>Sexe</b></th>
 		</tr>
 		</thead>
 		<tbody>
  <?php foreach($query->result() as $index) {?> 
-			<tr>
 			<td> <?php echo $index -> actor_id; ?></td>
 			<td> <?php echo $index -> fullname; ?></td>
-			
+			<td> aaaaaaaaaasssssssssssssaaaaaaaaaasssssssssssss</td>
+			<td> aaaaaaaaaasssssssssssssaaaaaaaaaasssssssssssss</td>
+			<td> aaaaaaaaaasssssssssssssaaaaaaaaaasssssssssssss</td>
+			<td> aaaaaaaaaaaaaaaaaaassssaaaaaaaaaasssssssssssss</td>
+			<td> aaaaaaaaaasssssssssssaaaaaaaaaasssssssssssssss</td>
+			<td> aaaaaaaaaassssssssssaaaaaaaaaassssssssssssssss</td>
+			<td> aaaaaaaaaassssssssaaaaaaaaaassssssssssssssssss</td>
+			<td> aaaaaaaaaasssssssaaaaaaaaaasssssssssssssssssss</td>
+			<td> aaaaaaaaaasssssssaaaaaaaaaasssssssssssssssssss</td>
+			<td> aaaaaaaaaassssssaaaaaaaaaassssssssssssssssssss</td>
+			<td> aaaaaaaaaassssssaaaaaaaaaassssssssssssssssssss</td>
+			<td> aaaaaaaaaasssssaaaaaaaaaasssssssssssssssssssss</td>
 			<td>
 				<a href='modificar/<?php echo $index->actor_id;?>'><button class="btn btn-primary" type="button">Modificar</button></a>
 				<a href='eliminar/<?php echo $index->actor_id; ?>'><button class="btn btn-danger" type="button">Eliminar</button></a></td>
