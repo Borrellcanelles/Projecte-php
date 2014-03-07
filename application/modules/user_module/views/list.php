@@ -104,36 +104,12 @@ $(document).ready( function () {
 			<th><b>ID</b></th>
 			<th><b>Nom</b></th>
 			<th><b>Accions</b></th>
-			<th><b>DNI</b></th>
-			<th><b>Direccio</b></th>
-			<th><b>Edad</b></th>
-			<th><b>Sexe</b></th>
-			<th><b>DNI</b></th>
-			<th><b>Direccio</b></th>
-			<th><b>Edad</b></th>
-			<th><b>Sexe</b></th>
-			<th><b>DNI</b></th>
-			<th><b>Direccio</b></th>
-			<th><b>Edad</b></th>
-			<th><b>Sexe</b></th>
 		</tr>
 		</thead>
 		<tbody>
  <?php foreach($query->result() as $index) {?> 
 			<td> <?php echo $index -> actor_id; ?></td>
 			<td> <?php echo $index -> fullname; ?></td>
-			<td> aaaaaaaaaasssssssssssssaaaaaaaaaasssssssssssss</td>
-			<td> aaaaaaaaaasssssssssssssaaaaaaaaaasssssssssssss</td>
-			<td> aaaaaaaaaasssssssssssssaaaaaaaaaasssssssssssss</td>
-			<td> aaaaaaaaaaaaaaaaaaassssaaaaaaaaaasssssssssssss</td>
-			<td> aaaaaaaaaasssssssssssaaaaaaaaaasssssssssssssss</td>
-			<td> aaaaaaaaaassssssssssaaaaaaaaaassssssssssssssss</td>
-			<td> aaaaaaaaaassssssssaaaaaaaaaassssssssssssssssss</td>
-			<td> aaaaaaaaaasssssssaaaaaaaaaasssssssssssssssssss</td>
-			<td> aaaaaaaaaasssssssaaaaaaaaaasssssssssssssssssss</td>
-			<td> aaaaaaaaaassssssaaaaaaaaaassssssssssssssssssss</td>
-			<td> aaaaaaaaaassssssaaaaaaaaaassssssssssssssssssss</td>
-			<td> aaaaaaaaaasssssaaaaaaaaaasssssssssssssssssssss</td>
 			<td>
 				<a href='modificar/<?php echo $index->actor_id;?>'><button class="btn btn-primary" type="button">Modificar</button></a>
 				<a href='eliminar/<?php echo $index->actor_id; ?>'><button class="btn btn-danger" type="button">Eliminar</button></a></td>
