@@ -20,6 +20,20 @@ class principal extends CI_Controller {
 			}
 		}	*/
 	}
+	public function comandes(){
+		$this->load->view('ui.html');
+	}
+	public function llibres(){
+		$this->load->view('tab-panel.html');
+	}
+	public function ventes(){
+		$this->load->view('chart.html');
+	}
+	public function clients(){
+		$this->load->view('table.html');
+	}
+	
+	
 	
 	public function provainsert(){
 	$data = array(
