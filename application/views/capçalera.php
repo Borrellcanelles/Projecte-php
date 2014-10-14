@@ -29,9 +29,9 @@ font-size: 16px;"> <a href="#" class="btn btn-danger square-btn-adjust">Logout</
 					<!--falta ficar los if esta url active menu-->
 					
 					<? $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";?>
-<?
+<?php
 switch ($actual_link) {
-<?
+
 case "http://localhost/projectephp/index.php/principal/principal1":?>
 <li>
                         <a  class="active-menu" href="principal1"><i class="fa fa-dashboard fa-3x"></i> Principal</a>
@@ -119,26 +119,8 @@ default : ?>
                       <li  >
                         <a class="active-menu" href="clients"><i class="fa fa-table fa-3x"></i> Clients</a>
                     </li>
-</ul> <? 
-
-
-                    <li>
-                        <a  href="principal1"><i class="fa fa-dashboard fa-3x"></i> Principal</a>
-                    </li>
-                      <li>
-                        <a class="active-menu" href="comandes"><i class="fa fa-desktop fa-3x"></i> Comandes</a>
-                    </li>
-                    <li>
-                        <a  href="ventes"><i class="fa fa-qrcode fa-3x"></i> Llibres</a>
-                    </li>
-						   <li  >
-                        <a  href="llibres"><i class="fa fa-bar-chart-o fa-3x"></i> Ventes</a>
-                    </li>	
-                      <li  >
-                        <a  href="clients"><i class="fa fa-table fa-3x"></i> Clients</a>
-                    </li>
-                </ul>
-               } ?>
+</ul> 
+               <?} ?>
             </div>
             
             
