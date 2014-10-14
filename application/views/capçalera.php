@@ -40,10 +40,10 @@ case "http://localhost/projectephp/index.php/principal/principal1":?>
                         <a href="comandes"><i class="fa fa-desktop fa-3x"></i> Comandes</a>
                     </li>
                     <li>
-                        <a  href="ventes"><i class="fa fa-qrcode fa-3x"></i> Llibres</a>
+                        <a  href="llibres"><i class="fa fa-qrcode fa-3x"></i> Llibres</a>
                     </li>
 						   <li  >
-                        <a  href="llibres"><i class="fa fa-bar-chart-o fa-3x"></i> Ventes</a>
+                        <a  href="ventes"><i class="fa fa-bar-chart-o fa-3x"></i> Ventes</a>
                     </li>	
                       <li  >
                         <a  href="clients"><i class="fa fa-table fa-3x"></i> Clients</a>
@@ -58,10 +58,10 @@ case "http://localhost/projectephp/index.php/principal/comandes":?>
                         <a class="active-menu" href="comandes"><i class="fa fa-desktop fa-3x"></i> Comandes</a>
                     </li>
                     <li>
-                        <a  href="ventes"><i class="fa fa-qrcode fa-3x"></i> Llibres</a>
+                        <a  href="llibres"><i class="fa fa-qrcode fa-3x"></i> Llibres</a>
                     </li>
 						   <li  >
-                        <a  href="llibres"><i class="fa fa-bar-chart-o fa-3x"></i> Ventes</a>
+                        <a  href="ventes"><i class="fa fa-bar-chart-o fa-3x"></i> Ventes</a>
                     </li>	
                       <li  >
                         <a  href="clients"><i class="fa fa-table fa-3x"></i> Clients</a>
@@ -76,10 +76,10 @@ case "http://localhost/projectephp/index.php/principal/llibres":?>
                         <a  href="comandes"><i class="fa fa-desktop fa-3x"></i> Comandes</a>
                     </li>
                     <li>
-                        <a  href="ventes"><i class="fa fa-qrcode fa-3x"></i> Llibres</a>
+                        <a class="active-menu" href="llibres"><i class="fa fa-qrcode fa-3x"></i> Llibres</a>
                     </li>
 						   <li  >
-                        <a class="active-menu" href="llibres"><i class="fa fa-bar-chart-o fa-3x"></i> Ventes</a>
+                        <a  href="ventes"><i class="fa fa-bar-chart-o fa-3x"></i> Ventes</a>
                     </li>	
                       <li  >
                         <a  href="clients"><i class="fa fa-table fa-3x"></i> Clients</a>
@@ -94,10 +94,10 @@ case "http://localhost/projectephp/index.php/principal/ventes":?>
                         <a  href="comandes"><i class="fa fa-desktop fa-3x"></i> Comandes</a>
                     </li>
                     <li>
-                        <a class="active-menu" href="ventes"><i class="fa fa-qrcode fa-3x"></i> Llibres</a>
+                        <a  href="llibres"><i class="fa fa-qrcode fa-3x"></i> Llibres</a>
                     </li>
 						   <li  >
-                        <a   href="llibres"><i class="fa fa-bar-chart-o fa-3x"></i> Ventes</a>
+                        <a class="active-menu"  href="ventes"><i class="fa fa-bar-chart-o fa-3x"></i> Ventes</a>
                     </li>	
                       <li  >
                         <a  href="clients"><i class="fa fa-table fa-3x"></i> Clients</a>
@@ -111,10 +111,10 @@ default : ?>
                         <a href="comandes"><i class="fa fa-desktop fa-3x"></i> Comandes</a>
                     </li>
                     <li>
-                        <a  href="ventes"><i class="fa fa-qrcode fa-3x"></i> Llibres</a>
+                        <a  href="llibres"><i class="fa fa-qrcode fa-3x"></i> Llibres</a>
                     </li>
 						   <li  >
-                        <a  href="llibres"><i class="fa fa-bar-chart-o fa-3x"></i> Ventes</a>
+                        <a  href="ventes"><i class="fa fa-bar-chart-o fa-3x"></i> Ventes</a>
                     </li>	
                       <li  >
                         <a class="active-menu" href="clients"><i class="fa fa-table fa-3x"></i> Clients</a>

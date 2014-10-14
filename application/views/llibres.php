@@ -5,7 +5,7 @@
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pàgina Administració : Comandes</title>
+    <title>Pàgina Administració : Llibres</title>
 </head>
 <body>
 	
@@ -20,7 +20,7 @@
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                     <h2>Text</h2>   
+                     <h2>Llistat de llibres</h2>   
                      <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-6">           
              </div>

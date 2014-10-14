@@ -11,7 +11,7 @@ class principal extends CI_Controller {
 
 	public function principal1()
 	{
-		$this->load->view('blank.html');
+		$this->load->view('principal.php');
 		//$this->load->view('principal'); 
 		/*$query = $this->db->query('SELECT * FROM actor LIMIT 10');
 		if ($query->num_rows() > 0) {
@@ -21,16 +21,16 @@ class principal extends CI_Controller {
 		}	*/
 	}
 	public function comandes(){
-		$this->load->view('ui.html');
+		$this->load->view('comandes');
 	}
 	public function llibres(){
-		$this->load->view('tab-panel.html');
+		$this->load->view('llibres');
 	}
 	public function ventes(){
-		$this->load->view('chart.html');
+		$this->load->view('ventes');
 	}
 	public function clients(){
-		$this->load->view('table.html');
+		$this->load->view('clients');
 	}
 	
 	
